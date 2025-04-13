@@ -1,0 +1,63 @@
+/* src/pages/PizzaOrderPage.css */
+.order-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 2rem;
+}
+
+
+.order-summary.success {
+  border-color: green;
+}
+
+.order-summary.error {
+  border-color: red;
+}
+
+.confirmed-order-table {
+  width: 80%;                
+  max-width: 600px;          
+  margin: 1rem auto;        
+  border-collapse: collapse;
+  background-color: white;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.confirmed-order-table th,
+.confirmed-order-table td {
+  padding: 1rem;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+
+.confirmed-order-table th {
+  background-color: #28a745;
+  color: white;
+  font-weight: bold;
+}
+
+.confirmed-order-table tbody tr:hover {
+  background-color: #f1f1f1;
+}
+
+.confirmed-order-table td {
+  color: #555;
+}
+
+/* Estilos para el mensaje de confirmación */
+.confirmation-message {
+  margin-top: 2rem;
+  background: #e0ffe0;
+  padding: 1rem;
+  border: 1px solid #28a745;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 600px;
+  text-align: center;     
+  margin-left: auto;        
+  margin-right: auto;       
+
+}

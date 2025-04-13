@@ -17,12 +17,16 @@ import {
   export const getOrderByIdController = (req, res) => {
     try {
       const { id } = req.params;
-      const order = fetchOrderById(id);
-      res.status(200).json(order);
+      const order = fetchOrderById(id); 
+      if (!order) {
+        return res.status(404).json({ message: `Pedido con ID ${id} no encontrado` });
+      }
+      res.status(200).json(order);  
     } catch (error) {
       res.status(404).json({ message: error.message });
     }
   };
+  
   
   export const createOrder = (req, res) => {
     try {
