@@ -1,0 +1,43 @@
+{
+	"info": {
+		"_postman_id": "643796ec-a96e-4b48-b18c-0a481913ff12",
+		"name": "Pruebas",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "26173975",
+		"_collection_link": "https://bold-capsule-395575.postman.co/workspace/Team-Workspace~be654876-3d00-4bd8-800a-6c30d4dc0de6/collection/26173975-643796ec-a96e-4b48-b18c-0a481913ff12?action=share&source=collection_link&creator=26173975"
+	},
+	"item": [
+		{
+			"name": "Listar Pizzas",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Listar Ordenes",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "Listar una orden",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		},
+		{
+			"name": "New Request",
+			"request": {
+				"method": "GET",
+				"header": []
+			},
+			"response": []
+		}
+	]
+}
