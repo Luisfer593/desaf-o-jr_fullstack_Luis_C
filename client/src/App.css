@@ -3,6 +3,7 @@
 body {
   margin: 0;
   font-family: sans-serif;
+  background-image: url('../public/imagen.jpg');
 }
 h1 {
   text-align: center;
