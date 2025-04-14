@@ -8,7 +8,7 @@ const PizzaList = ({ pizzas, onAdd }) => {
         <div key={pizza.id} className="pizza-card">
           <h3 className="pizza-title">{pizza.name}</h3>
           <p className="pizza-ingredients">
-            {pizza.ingredients.join(', ')}
+            {Array.isArray(pizza.ingredients) ? pizza.ingredients.join(', ') : 'Sin ingredientes'}
           </p>
           <p className="pizza-price">${pizza.price.toFixed(2)}</p>
           <button className="add-button" onClick={() => onAdd(pizza)}>

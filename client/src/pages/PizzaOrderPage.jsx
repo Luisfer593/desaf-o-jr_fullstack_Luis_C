@@ -1,3 +1,5 @@
+// src/pages/PizzaOrderPage.jsx
+
 import React, { useEffect, useState } from 'react';
 import { getPizzas, postOrder } from '../services/api';
 import PizzaList from '../components/PizzaList';
@@ -11,7 +13,7 @@ const PizzaOrderPage = () => {
   const [confirmedOrder, setConfirmedOrder] = useState([]);  // Nuevo estado
 
   useEffect(() => {
-    getPizzas().then(setPizzas);
+    getPizzas().then(setPizzas);  // Simula la carga de las pizzas desde la API
   }, []);
 
   const addToOrder = (pizza) => {
