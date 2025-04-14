@@ -1,5 +1,5 @@
 // server.js
-import app from './app.js';
+import app from './api/app.js';
 import cors from 'cors';
 
 const PORT = process.env.PORT || 4000;
