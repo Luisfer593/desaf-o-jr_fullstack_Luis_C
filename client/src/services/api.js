@@ -2,7 +2,7 @@
 import axios from 'axios';
 
 const API = axios.create({
-  baseURL: 'http://localhost:4000/api', // Aquí apuntas correctamente al backend
+  baseURL: import.meta.env.VITE_API_URL || 'http://localhost:4000/api',
 });
 
 export const getPizzas = async () => {
@@ -15,8 +15,7 @@ export const postOrder = async (orderData) => {
   return response.data;
 };
 
-// Modificada la función para obtener un pedido por ID
 export const getOrderById = async (id) => {
-  const response = await API.get(`/orders/${id}`); // Ruta para obtener un pedido por su ID
+  const response = await API.get(`/orders/${id}`);
   return response.data;
 };

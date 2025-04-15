@@ -2,7 +2,7 @@
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
-import { Pizza } from '../models/pizza.js';
+import { Pizza } from '../models/Pizza.js';
 2
 // Necesario para __dirname en módulos ES
 const __filename = fileURLToPath(import.meta.url);

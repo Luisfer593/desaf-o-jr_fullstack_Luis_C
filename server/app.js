@@ -1,7 +1,7 @@
 // app.js
 import express from 'express';
-import pizzasRoutes from '../routes/pizzasRoutes.js';
-import ordersRoutes from '../routes/ordersRoutes.js';
+import pizzasRoutes from './routes/pizzasRoutes.js';
+import ordersRoutes from './routes/ordersRoutes.js';
 import cors from 'cors';
 
 const app = express();
