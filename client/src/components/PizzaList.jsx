@@ -1,3 +1,5 @@
+// src/components/PizzaList.jsx
+
 import React from 'react';
 import './PizzaList.css';
 
