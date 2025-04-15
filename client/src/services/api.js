@@ -1,12 +1,12 @@
 import axios from 'axios';
 
-const baseURL = process.env.REACT_APP_API_URL || 'http://localhost:4000/api';
-
+const baseUrl = process.env.REACT_APP_API_URL || 'http://localhost:4000/api';
 const API = axios.create({
-  baseURL,
+  baseURL: baseUrl,
 });
 
-console.log("API URL:", baseURL);
+console.log("🌐 API URL:", baseUrl);
+
 
 export const getPizzas = async () => {
   const response = await API.get('/pizzas');
